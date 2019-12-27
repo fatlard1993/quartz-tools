@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "id": "quartz-tools-justfatlard",
+  "version": "${version}",
+  "name": "Quartz Tools",
+  "description": "Adds tools made out of smooth quartz",
+  "authors": [
+    "justfatlard"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": ""
+  },
+  "license": "MIT",
+  "icon": "icon.png",
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "justfatlard.quartz_tools.QuartzTools"
+    ]
+  },
+  "depends": {
+    "fabricloader": ">=0.7.2",
+    "fabric": "*",
+    "minecraft": "1.15.x"
+  },
+  "suggests": {
+    "flamingo": "*"
+  }
+}
