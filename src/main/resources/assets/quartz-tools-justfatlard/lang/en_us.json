@@ -3,5 +3,7 @@
   "item.quartz-tools-justfatlard.quartz_axe": "Quartz Axe",
   "item.quartz-tools-justfatlard.quartz_shovel": "Quartz Shovel",
   "item.quartz-tools-justfatlard.quartz_sword": "Quartz Sword",
-  "item.quartz-tools-justfatlard.quartz_hoe": "Quartz Hoe"
+  "item.quartz-tools-justfatlard.quartz_hoe": "Quartz Hoe",
+  "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.title": "The Lost Tools of the Pigman",
+  "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.description": "Craft a quartz tool"
 }

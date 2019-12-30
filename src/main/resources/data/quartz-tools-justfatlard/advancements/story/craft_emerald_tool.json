@@ -1,0 +1,18 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": { "item": "quartz-tools-justfatlard:quartz_pickaxe" },
+    "title": {
+      "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.title"
+    },
+    "description": {
+      "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.description"
+    }
+  },
+  "criteria": {
+    "has_quartz_tool": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "tag": "quartz-tools-justfatlard:quartz_tool" }] }
+    }
+  }
+}
