@@ -6,32 +6,20 @@ import net.minecraft.recipe.Ingredient;
 
 public class QuartzToolMaterial implements ToolMaterial {
 	@Override
-	public int getDurability() {
-		return 200;
-	}
+	public int getMiningLevel(){ return 3; }
 
 	@Override
-	public float getAttackDamage() {
-		return 5.5F;
-	}
+	public int getDurability(){ return 128; }
 
 	@Override
-	public float getMiningSpeed() {
-		return 6.5f;
-	}
+	public float getMiningSpeed(){ return 10.0f; }
 
 	@Override
-	public int getMiningLevel() {
-		return 2;
-	}
+	public float getAttackDamage(){ return 4.0F; }
 
 	@Override
-	public int getEnchantability() {
-		return 22;
-	}
+	public int getEnchantability(){ return 30; }
 
 	@Override
-	public Ingredient getRepairIngredient() {
-		return Ingredient.ofItems(Blocks.SMOOTH_QUARTZ);
-	}
+	public Ingredient getRepairIngredient(){ return Ingredient.ofItems(Blocks.SMOOTH_QUARTZ); }
 }
