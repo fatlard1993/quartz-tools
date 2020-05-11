@@ -1,7 +1,7 @@
 # Quartz Tools
 
-[![CurseForge](http://cf.way2muchnoise.eu/full_quartz-tools_downloads.svg)](http://www.curseforge.com/minecraft/mc-mods/quartz-tools)
-[![CurseForge](http://cf.way2muchnoise.eu/versions/quartz-tools.svg)](http://www.curseforge.com/minecraft/mc-mods/quartz-tools)
+[![CurseForge](http://cf.way2muchnoise.eu/full_simple-quartz-tools_downloads.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-tools)
+[![CurseForge](http://cf.way2muchnoise.eu/versions/simple-quartz-tools.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-tools)
 
 A [Minecraft](minecraft.net) mod built on [Fabric](fabricmc.net).
 
