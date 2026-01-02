@@ -1,0 +1,9 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": ["#", "/", "/"],
+  "key": {
+    "#": "minecraft:smooth_quartz",
+    "/": "minecraft:stick"
+  },
+  "result": { "id": "quartz-tools-justfatlard:quartz_shovel" }
+}

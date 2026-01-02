@@ -8,17 +8,17 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import xyz.nucleoid.packettweaker.PacketContext;
 
-public class QuartzAxeItem extends Item implements PolymerItem {
+public class QuartzHoeItem extends Item implements PolymerItem {
 	private final Identifier modelId;
 
-	public QuartzAxeItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
-		super(settings.axe(material, attackDamage, attackSpeed));
-		this.modelId = Identifier.of(Main.MOD_ID, "quartz_axe");
+	public QuartzHoeItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
+		super(settings.hoe(material, attackDamage, attackSpeed));
+		this.modelId = Identifier.of(Main.MOD_ID, "quartz_hoe");
 	}
 
 	@Override
 	public Item getPolymerItem(ItemStack itemStack, PacketContext context) {
-		return Items.DIAMOND_AXE;
+		return Items.DIAMOND_HOE;
 	}
 
 	@Override

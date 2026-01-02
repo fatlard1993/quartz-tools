@@ -3,6 +3,8 @@
 [![CurseForge](http://cf.way2muchnoise.eu/full_simple-quartz-tools_downloads.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-tools)
 [![CurseForge](http://cf.way2muchnoise.eu/versions/simple-quartz-tools.svg)](http://www.curseforge.com/minecraft/mc-mods/simple-quartz-tools)
 
+![Quartz Tools](img.png)
+
 A [Minecraft](minecraft.net) mod built on [Fabric](fabricmc.net).
 
 With this mod you can craft the following tools with smooth quartz blocks: Axe, Hoe, Pickaxe, Shovel, and Sword.

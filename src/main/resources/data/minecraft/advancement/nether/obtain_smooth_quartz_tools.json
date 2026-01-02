@@ -1,0 +1,24 @@
+{
+  "parent": "minecraft:nether/root",
+  "display": {
+    "icon": { "id": "minecraft:smooth_quartz" },
+    "title": { "text": "Smooth Operator" },
+    "description": { "text": "Obtain smooth quartz to craft quartz tools" },
+    "hidden": true
+  },
+  "criteria": {
+    "has_smooth_quartz": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": { "items": [{ "items": "minecraft:smooth_quartz" }] }
+    }
+  },
+  "rewards": {
+    "recipes": [
+      "quartz-tools-justfatlard:quartz_pickaxe",
+      "quartz-tools-justfatlard:quartz_axe",
+      "quartz-tools-justfatlard:quartz_shovel",
+      "quartz-tools-justfatlard:quartz_hoe",
+      "quartz-tools-justfatlard:quartz_sword"
+    ]
+  }
+}

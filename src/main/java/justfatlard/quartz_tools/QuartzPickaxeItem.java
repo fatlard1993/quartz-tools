@@ -1,10 +1,28 @@
 package justfatlard.quartz_tools;
 
-import net.minecraft.item.ItemGroup;
-import net.minecraft.item.PickaxeItem;
+import eu.pb4.polymer.core.api.item.PolymerItem;
+import net.minecraft.item.Item;
+import net.minecraft.item.ItemStack;
+import net.minecraft.item.Items;
+import net.minecraft.item.ToolMaterial;
+import net.minecraft.util.Identifier;
+import xyz.nucleoid.packettweaker.PacketContext;
 
-public class QuartzPickaxeItem extends PickaxeItem {
-	public QuartzPickaxeItem() {
-		super(Main.QUARTZ_TOOL_MATERIAL, 1, -2.8F, new Settings().maxCount(1).group(ItemGroup.TOOLS));
+public class QuartzPickaxeItem extends Item implements PolymerItem {
+	private final Identifier modelId;
+
+	public QuartzPickaxeItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
+		super(settings.pickaxe(material, attackDamage, attackSpeed));
+		this.modelId = Identifier.of(Main.MOD_ID, "quartz_pickaxe");
+	}
+
+	@Override
+	public Item getPolymerItem(ItemStack itemStack, PacketContext context) {
+		return Items.DIAMOND_PICKAXE;
+	}
+
+	@Override
+	public Identifier getPolymerItemModel(ItemStack itemStack, PacketContext context) {
+		return this.modelId;
 	}
 }
