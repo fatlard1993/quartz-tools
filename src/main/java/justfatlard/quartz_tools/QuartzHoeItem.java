@@ -1,6 +1,7 @@
 package justfatlard.quartz_tools;
 
 import eu.pb4.polymer.core.api.item.PolymerItem;
+import net.minecraft.item.HoeItem;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemStack;
 import net.minecraft.item.Items;
@@ -8,11 +9,11 @@ import net.minecraft.item.ToolMaterial;
 import net.minecraft.util.Identifier;
 import xyz.nucleoid.packettweaker.PacketContext;
 
-public class QuartzHoeItem extends Item implements PolymerItem {
+public class QuartzHoeItem extends HoeItem implements PolymerItem {
 	private final Identifier modelId;
 
 	public QuartzHoeItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
-		super(settings.hoe(material, attackDamage, attackSpeed));
+		super(material, attackDamage, attackSpeed, settings);
 		this.modelId = Identifier.of(Main.MOD_ID, "quartz_hoe");
 	}
 
