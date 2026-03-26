@@ -53,8 +53,8 @@ Polymer is bundled with the mod - no additional downloads required.
 
 ## Requirements
 
-- Minecraft 1.21+
-- Fabric Loader 0.15.0+
+- Minecraft 1.21.11
+- Fabric Loader 0.18.1+
 - Fabric API
 - Polymer (bundled)
 

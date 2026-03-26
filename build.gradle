@@ -1,6 +1,5 @@
 plugins {
 	id 'fabric-loom' version '1.13-SNAPSHOT'
-	id 'maven-publish'
 }
 
 version = project.mod_version
@@ -12,9 +11,6 @@ base {
 
 repositories {
 	maven { url 'https://maven.nucleoid.xyz' }
-}
-
-loom {
 }
 
 dependencies {
@@ -51,12 +47,3 @@ jar {
 	}
 }
 
-publishing {
-	publications {
-		mavenJava(MavenPublication) {
-			from components.java
-		}
-	}
-	repositories {
-	}
-}

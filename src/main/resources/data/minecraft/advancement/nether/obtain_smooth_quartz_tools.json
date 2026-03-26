@@ -2,8 +2,8 @@
   "parent": "minecraft:nether/root",
   "display": {
     "icon": { "id": "minecraft:smooth_quartz" },
-    "title": { "text": "Smooth Operator" },
-    "description": { "text": "Obtain smooth quartz to craft quartz tools" },
+    "title": { "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.title" },
+    "description": { "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.description" },
     "hidden": true
   },
   "criteria": {

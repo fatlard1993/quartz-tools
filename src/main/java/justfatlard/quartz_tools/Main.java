@@ -3,6 +3,8 @@ package justfatlard.quartz_tools;
 import eu.pb4.polymer.core.api.item.PolymerItemGroupUtils;
 import eu.pb4.polymer.resourcepack.api.PolymerResourcePackUtils;
 import net.fabricmc.api.ModInitializer;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -21,6 +23,7 @@ import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 
 public class Main implements ModInitializer {
 	public static final String MOD_ID = "quartz-tools-justfatlard";
+	private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
 	// Quartz tool stats - high power, low durability, high enchantability
 	public static final TagKey<Block> INCORRECT_FOR_QUARTZ_TOOL = BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
@@ -106,6 +109,6 @@ public class Main implements ModInitializer {
 			entries.add(QUARTZ_SWORD);
 		});
 
-		System.out.println("[quartz-tools] Loaded quartz-tools (server-side with Polymer)");
+		LOGGER.info("Loaded quartz-tools (server-side with Polymer)");
 	}
 }
