@@ -3,21 +3,19 @@
   "id": "quartz-tools-justfatlard",
   "version": "${version}",
   "name": "Quartz Tools",
-  "description": "Adds tools made out of smooth quartz (server-side with Polymer)",
+  "description": "Adds tools made out of smooth quartz",
   "authors": ["justfatlard"],
   "contact": {},
   "license": "MIT",
   "icon": "icon.png",
-  "environment": "server",
+  "environment": "*",
   "entrypoints": {
     "main": ["justfatlard.quartz_tools.Main"]
   },
   "depends": {
     "fabricloader": ">=0.18.1",
     "fabric-api": "*",
-    "minecraft": "~1.21.11",
-    "java": ">=21",
-    "polymer-core": ">=0.15.0",
-    "polymer-resource-pack": ">=0.15.0"
+    "minecraft": ">=26.1",
+    "java": ">=25"
   }
 }

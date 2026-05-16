@@ -1,28 +1,10 @@
 package justfatlard.quartz_tools;
 
-import eu.pb4.polymer.core.api.item.PolymerItem;
-import net.minecraft.item.Item;
-import net.minecraft.item.ItemStack;
-import net.minecraft.item.Items;
-import net.minecraft.item.ToolMaterial;
-import net.minecraft.util.Identifier;
-import xyz.nucleoid.packettweaker.PacketContext;
+import net.minecraft.world.item.Item;
+import net.minecraft.world.item.ToolMaterial;
 
-public class QuartzSwordItem extends Item implements PolymerItem {
-	private final Identifier modelId;
-
-	public QuartzSwordItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Settings settings) {
+public class QuartzSwordItem extends Item {
+	public QuartzSwordItem(ToolMaterial material, float attackDamage, float attackSpeed, Item.Properties settings) {
 		super(settings.sword(material, attackDamage, attackSpeed));
-		this.modelId = Identifier.of(Main.MOD_ID, "quartz_sword");
-	}
-
-	@Override
-	public Item getPolymerItem(ItemStack itemStack, PacketContext context) {
-		return Items.DIAMOND_SWORD;
-	}
-
-	@Override
-	public Identifier getPolymerItemModel(ItemStack itemStack, PacketContext context) {
-		return this.modelId;
 	}
 }
