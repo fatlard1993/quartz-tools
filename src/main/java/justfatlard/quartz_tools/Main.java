@@ -44,7 +44,6 @@ public class Main implements ModInitializer {
 		return ResourceKey.create(Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, name));
 	}
 
-	// Creative tab keys
 	private static final ResourceKey<CreativeModeTab> TOOLS_TAB = ResourceKey.create(
 		Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath("minecraft", "tools_and_utilities")
 	);
@@ -52,7 +51,6 @@ public class Main implements ModInitializer {
 		Registries.CREATIVE_MODE_TAB, Identifier.fromNamespaceAndPath("minecraft", "combat")
 	);
 
-	// Tool items
 	public static final Item QUARTZ_PICKAXE = new QuartzPickaxeItem(
 		QUARTZ_TOOL_MATERIAL, 1.0f, -2.8f,
 		new Item.Properties().setId(keyOf("quartz_pickaxe")).stacksTo(1)
@@ -80,7 +78,6 @@ public class Main implements ModInitializer {
 
 	@Override
 	public void onInitialize() {
-		// Register with Pandorical if available
 		if (PandoricalApi.isAvailable()) {
 			PandoricalApi.content().registerModAssets(MOD_ID);
 		}
@@ -91,7 +88,6 @@ public class Main implements ModInitializer {
 		Registry.register(BuiltInRegistries.ITEM, keyOf("quartz_hoe"), QUARTZ_HOE);
 		Registry.register(BuiltInRegistries.ITEM, keyOf("quartz_sword"), QUARTZ_SWORD);
 
-		// Add tools to vanilla Tools creative tab
 		CreativeModeTabEvents.modifyOutputEvent(TOOLS_TAB).register(entries -> {
 			entries.accept(QUARTZ_PICKAXE);
 			entries.accept(QUARTZ_AXE);
@@ -99,7 +95,6 @@ public class Main implements ModInitializer {
 			entries.accept(QUARTZ_HOE);
 		});
 
-		// Add sword to vanilla Combat creative tab
 		CreativeModeTabEvents.modifyOutputEvent(COMBAT_TAB).register(entries -> {
 			entries.accept(QUARTZ_SWORD);
 		});
