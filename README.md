@@ -27,7 +27,9 @@ Targets the Minecraft, Fabric Loader, and Fabric API versions declared in this m
 
 ## Pandorical
 
-Quartz Tools is a server-side mod. If Pandorical is installed on the server, the mod uses `PandoricalApi.content().registerModAssets()` to sync its custom tool textures and models to Pandorical clients. Pandorical must be installed client-side to see the custom quartz tool appearance and item names; without it, the tools still function with all of their stats, but a vanilla client won't have the custom textures.
+Quartz Tools runs server-side, and Pandorical is a hard dependency (`fabric.mod.json`): the server will not load this mod without it. It syncs the tools' textures and models through `PandoricalApi.content().registerModAssets()`.
+
+Clients are the optional half. A player on a Pandorical client sees the quartz textures and item names; a player on a vanilla client sees neither. The stats are identical either way.
 
 ## Installation
 
