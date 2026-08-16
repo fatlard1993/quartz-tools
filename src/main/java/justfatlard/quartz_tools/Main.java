@@ -1,5 +1,6 @@
 package justfatlard.quartz_tools;
 
+import justfatlard.pandorical.api.ItemRegistration;
 import justfatlard.pandorical.api.PandoricalApi;
 import net.fabricmc.api.ModInitializer;
 import net.fabricmc.fabric.api.creativetab.v1.CreativeModeTabEvents;
@@ -79,6 +80,11 @@ public class Main implements ModInitializer {
 	@Override
 	public void onInitialize() {
 		if (PandoricalApi.isAvailable()) {
+			for (String name : new String[] { "quartz_pickaxe", "quartz_axe", "quartz_shovel", "quartz_hoe", "quartz_sword" }) {
+				PandoricalApi.content().registerItem(MOD_ID + ":" + name, new ItemRegistration()
+					.model(MOD_ID + ":item/" + name)
+					.maxStackSize(1));
+			}
 			PandoricalApi.content().registerModAssets(MOD_ID);
 		}
 
