@@ -1,15 +1,23 @@
 {
   "parent": "minecraft:nether/root",
   "display": {
-    "icon": { "id": "minecraft:smooth_quartz" },
-    "title": { "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.title" },
-    "description": { "translate": "advancements.story.quartz-tools-justfatlard.craft_quartz_tool.description" },
+    "icon": {
+      "id": "minecraft:smooth_quartz"
+    },
+    "title": "The Lost Tools of the Pigmen",
+    "description": "Craft a quartz tool",
     "hidden": true
   },
   "criteria": {
     "has_smooth_quartz": {
       "trigger": "minecraft:inventory_changed",
-      "conditions": { "items": [{ "items": "minecraft:smooth_quartz" }] }
+      "conditions": {
+        "items": [
+          {
+            "items": "minecraft:smooth_quartz"
+          }
+        ]
+      }
     }
   },
   "rewards": {
