@@ -9,24 +9,64 @@
     "hidden": true
   },
   "criteria": {
-    "has_smooth_quartz": {
+    "has_quartz_pickaxe": {
       "trigger": "minecraft:inventory_changed",
       "conditions": {
         "items": [
           {
-            "items": "minecraft:smooth_quartz"
+            "items": "quartz-tools-justfatlard:quartz_pickaxe"
+          }
+        ]
+      }
+    },
+    "has_quartz_axe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-tools-justfatlard:quartz_axe"
+          }
+        ]
+      }
+    },
+    "has_quartz_shovel": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-tools-justfatlard:quartz_shovel"
+          }
+        ]
+      }
+    },
+    "has_quartz_hoe": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-tools-justfatlard:quartz_hoe"
+          }
+        ]
+      }
+    },
+    "has_quartz_sword": {
+      "trigger": "minecraft:inventory_changed",
+      "conditions": {
+        "items": [
+          {
+            "items": "quartz-tools-justfatlard:quartz_sword"
           }
         ]
       }
     }
   },
-  "rewards": {
-    "recipes": [
-      "quartz-tools-justfatlard:quartz_pickaxe",
-      "quartz-tools-justfatlard:quartz_axe",
-      "quartz-tools-justfatlard:quartz_shovel",
-      "quartz-tools-justfatlard:quartz_hoe",
-      "quartz-tools-justfatlard:quartz_sword"
+  "requirements": [
+    [
+      "has_quartz_pickaxe",
+      "has_quartz_axe",
+      "has_quartz_shovel",
+      "has_quartz_hoe",
+      "has_quartz_sword"
     ]
-  }
+  ]
 }
