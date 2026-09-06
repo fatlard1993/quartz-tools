@@ -23,13 +23,13 @@ A Fabric mod that adds a full set of tools (pickaxe, axe, shovel, hoe, and sword
 
 ## Pandorical
 
-Quartz Tools runs server-side, and Pandorical is a hard dependency (`fabric.mod.json`): the server will not load this mod without it. It syncs the tools' textures and models through `PandoricalApi.content().registerModAssets()`.
+Quartz Tools runs server-side, and Pandorical is required: the server will not load this mod without it. It syncs the tools' textures and models through Pandorical's content sync.
 
 Clients are the optional half. A player on a Pandorical client sees the quartz textures and item names; a player on a vanilla client sees neither. The stats are identical either way.
 
-## Installation
+## Development
 
-Install server-side alongside its declared dependencies (see `fabric.mod.json`); connecting clients need only Pandorical. Version targets live in `gradle.properties` (Minecraft, loader, Fabric API) and `fabric.mod.json` (Java).
+Installing is in [DEVELOPMENT.md](DEVELOPMENT.md).
 
 ## License
 
