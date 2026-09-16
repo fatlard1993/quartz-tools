@@ -2,6 +2,10 @@
 
 A Fabric mod that adds a full set of tools (pickaxe, axe, shovel, hoe, and sword) crafted from smooth quartz blocks. Quartz tools hit harder and mine faster than diamond, and take enchantments exceptionally well, but they're fragile: a glass-cannon tool tier that trades durability for raw power.
 
+## Screenshots
+
+![Pickaxe, axe, sword, shovel and hoe, framed](img.png)
+
 ## Features
 
 - Pickaxe, axe, shovel, hoe, and sword crafted from smooth quartz blocks and sticks using standard vanilla tool crafting patterns
