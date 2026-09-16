@@ -7,7 +7,7 @@
   "authors": ["justfatlard"],
   "contact": {},
   "license": "MIT",
-  "icon": "icon.png",
+  "icon": "assets/quartz-tools-justfatlard/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": ["justfatlard.quartz_tools.Main"]

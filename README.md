@@ -6,7 +6,7 @@ A Fabric mod that adds a full set of tools (pickaxe, axe, shovel, hoe, and sword
 
 - Pickaxe, axe, shovel, hoe, and sword crafted from smooth quartz blocks and sticks using standard vanilla tool crafting patterns
 - Mines anything diamond tools can mine (including obsidian)
-- Fastest mining speed and highest attack damage bonus of any vanilla-tier tool
+- Mines faster than diamond or netherite (only gold is quicker), with an attack damage bonus equal to netherite's
 - Triple the enchantability of diamond
 - Very low durability: the tradeoff for the stat boost
 - Repairable with smooth quartz blocks
