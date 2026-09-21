@@ -1,22 +1,30 @@
 {
-  "schemaVersion": 1,
-  "id": "quartz-tools-justfatlard",
-  "version": "${version}",
-  "name": "Quartz Tools",
-  "description": "Adds tools made out of smooth quartz",
-  "authors": ["justfatlard"],
-  "contact": {},
-  "license": "MIT",
-  "icon": "assets/quartz-tools-justfatlard/icon.png",
-  "environment": "*",
-  "entrypoints": {
-    "main": ["justfatlard.quartz_tools.Main"]
-  },
-  "depends": {
-    "fabricloader": ">=${loaderVersion}",
-    "fabric-api": "${fabricApiVersion}",
-    "minecraft": "${minecraftDependency}",
-    "java": ">=25",
-    "pandorical": ">=15.0.0"
-  }
+	"schemaVersion": 1,
+	"id": "quartz-tools-justfatlard",
+	"version": "${version}",
+	"name": "Quartz Tools",
+	"description": "Adds tools made out of smooth quartz",
+	"authors": [
+		"justfatlard"
+	],
+	"contact": {
+		"homepage": "https://github.com/fatlard1993/quartz-tools",
+		"sources": "https://github.com/fatlard1993/quartz-tools",
+		"issues": "https://github.com/fatlard1993/quartz-tools/issues"
+	},
+	"license": "MIT",
+	"icon": "assets/quartz-tools-justfatlard/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"justfatlard.quartz_tools.Main"
+		]
+	},
+	"depends": {
+		"fabricloader": ">=${loaderVersion}",
+		"fabric-api": "${fabricApiVersion}",
+		"minecraft": "${minecraftDependency}",
+		"java": ">=25",
+		"pandorical": ">=15.0.0"
+	}
 }
