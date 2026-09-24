@@ -4,10 +4,12 @@
   ],
   "versions": {
     "2.0.1": [
-      "Quartz mines faster than netherite without mining faster than everything, and the mod menu icon is found where it should be."
+      "Quartz mines faster than netherite without mining faster than everything.",
+      "The mod menu icon is found where it should be."
     ],
     "2.0.0": [
-      "Pickaxe, axe, shovel, hoe and sword, with an advancement for each recipe, and a quartz tool in hand is what unlocks the rest."
+      "Pickaxe, axe, shovel, hoe and sword, with an advancement for each recipe.",
+      "A quartz tool in hand is what unlocks the rest."
     ]
   }
 }
