@@ -3,6 +3,9 @@
     "A full set of tools crafted from smooth quartz blocks. They hit harder and mine faster than diamond and take enchantments exceptionally well, but they are fragile."
   ],
   "versions": {
+    "2.0.2": [
+      "The mod menu icon matches the one on the download pages."
+    ],
     "2.0.1": [
       "Quartz mines faster than netherite without mining faster than everything.",
       "The mod menu icon loads."
