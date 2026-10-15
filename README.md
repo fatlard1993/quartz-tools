@@ -27,9 +27,7 @@ A Fabric mod that adds a full set of tools (pickaxe, axe, shovel, hoe, and sword
 
 ## Pandorical
 
-Quartz Tools runs server-side, and Pandorical is required: the server will not load this mod without it. It syncs the tools' textures and models through Pandorical's content sync.
-
-Clients are the optional half. A player on a Pandorical client sees the quartz textures and item names; a player on a vanilla client sees neither. The stats are identical either way.
+Quartz Tools goes on the server only, and **Pandorical is required there and on every player's client**: the tools are new items, and a client without Pandorical has no entry for them.
 
 ## Development
 
