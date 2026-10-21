@@ -15,6 +15,7 @@ A Fabric mod that adds a full set of tools (pickaxe, axe, shovel, hoe, and sword
 - Very low durability: the tradeoff for the stat boost
 - Repairable with smooth quartz blocks
 - Added to the vanilla Tools and Combat creative tabs
+- Takes trims at the smithing table when [Smithing Templates](https://github.com/fatlard1993/smithing-templates) is installed, shown on the tool
 
 ### Tool Stats
 
