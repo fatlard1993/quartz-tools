@@ -1,8 +1,13 @@
 {
   "overview": [
-    "A full set of tools crafted from smooth quartz blocks. They hit harder and mine faster than diamond and take enchantments exceptionally well, but they are fragile."
+    "A full set of tools crafted from smooth quartz blocks. Between iron and diamond, the easiest tools in the game to enchant, but fragile."
   ],
   "versions": {
+    "2.2.0": [
+      "Quartz tools sit between iron and diamond now: iron's mining level, so obsidian and ancient debris still need diamond, mining speed 7 (was 10) and +2.5 damage (was +4).",
+      "The axe hits as hard as an iron or diamond one, and the hoe no longer out-hits other hoes.",
+      "Tools already in a world take the new numbers."
+    ],
     "2.1.0": [
       "With Smithing Templates installed, quartz tools take trims at the smithing table, and the trim shows on the tool."
     ],

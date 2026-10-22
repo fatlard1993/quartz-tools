@@ -22,11 +22,11 @@ public class Main implements ModInitializer {
 	public static final String MOD_ID = "quartz-tools-justfatlard";
 	private static final Logger LOGGER = LoggerFactory.getLogger(MOD_ID);
 
-	// Quartz tool stats - high power, low durability, high enchantability
-	public static final TagKey<Block> INCORRECT_FOR_QUARTZ_TOOL = BlockTags.INCORRECT_FOR_DIAMOND_TOOL;
+	// Quartz tool stats - between iron and diamond, low durability, the highest enchantability
+	public static final TagKey<Block> INCORRECT_FOR_QUARTZ_TOOL = BlockTags.INCORRECT_FOR_IRON_TOOL;
 	public static final int DURABILITY = 128;
-	public static final float MINING_SPEED = 10.0f;
-	public static final float ATTACK_DAMAGE_BONUS = 4.0f;
+	public static final float MINING_SPEED = 7.0f;
+	public static final float ATTACK_DAMAGE_BONUS = 2.5f;
 	public static final int ENCHANTABILITY = 30;
 	public static final TagKey<Item> REPAIR_ITEMS = TagKey.create(
 		Registries.ITEM, Identifier.fromNamespaceAndPath(MOD_ID, "quartz_tool_repair_items")
@@ -53,27 +53,27 @@ public class Main implements ModInitializer {
 	);
 
 	public static final Item QUARTZ_PICKAXE = new QuartzPickaxeItem(
-		QUARTZ_TOOL_MATERIAL, 1.0f, -2.8f,
+		QUARTZ_TOOL_MATERIAL, attackDamageFor("pickaxe"), attackSpeedFor("pickaxe"),
 		new Item.Properties().setId(keyOf("quartz_pickaxe")).stacksTo(1)
 	);
 
 	public static final Item QUARTZ_AXE = new QuartzAxeItem(
-		QUARTZ_TOOL_MATERIAL, 5.0f, -3.0f,
+		QUARTZ_TOOL_MATERIAL, attackDamageFor("axe"), attackSpeedFor("axe"),
 		new Item.Properties().setId(keyOf("quartz_axe")).stacksTo(1)
 	);
 
 	public static final Item QUARTZ_SHOVEL = new QuartzShovelItem(
-		QUARTZ_TOOL_MATERIAL, 1.5f, -3.0f,
+		QUARTZ_TOOL_MATERIAL, attackDamageFor("shovel"), attackSpeedFor("shovel"),
 		new Item.Properties().setId(keyOf("quartz_shovel")).stacksTo(1)
 	);
 
 	public static final Item QUARTZ_HOE = new QuartzHoeItem(
-		QUARTZ_TOOL_MATERIAL, -3.0f, 0.0f,
+		QUARTZ_TOOL_MATERIAL, attackDamageFor("hoe"), attackSpeedFor("hoe"),
 		new Item.Properties().setId(keyOf("quartz_hoe")).stacksTo(1)
 	);
 
 	public static final Item QUARTZ_SWORD = new QuartzSwordItem(
-		QUARTZ_TOOL_MATERIAL, 3.0f, -2.4f,
+		QUARTZ_TOOL_MATERIAL, attackDamageFor("sword"), attackSpeedFor("sword"),
 		new Item.Properties().setId(keyOf("quartz_sword")).stacksTo(1)
 	);
 
@@ -122,10 +122,10 @@ public class Main implements ModInitializer {
 	 */
 	private static float attackDamageFor(String kind) {
 		return switch (kind) {
-			case "axe" -> 5.0F;
+			case "axe" -> 5.5F;
 			case "shovel" -> 1.5F;
 			case "sword" -> 3.0F;
-			case "hoe" -> -3.0F;
+			case "hoe" -> -2.5F;
 			default -> 1.0F;
 		};
 	}
@@ -134,7 +134,7 @@ public class Main implements ModInitializer {
 		return switch (kind) {
 			case "sword" -> -2.4F;
 			case "pickaxe" -> -2.8F;
-			case "hoe" -> 0.0F;
+			case "hoe" -> -0.5F;
 			default -> -3.0F;
 		};
 	}
