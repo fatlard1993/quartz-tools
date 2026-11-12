@@ -1,0 +1,45 @@
+{
+  "demo": {
+    "name": "Quartz Tools",
+    "icon": "quartz-tools-justfatlard:quartz_pickaxe",
+    "about": [
+      "Tools of smooth quartz: faster than iron, cheap, the easiest tools in the game to enchant well, and quick to wear out.",
+      "Set up the enchanting table with the bookshelves round it, throw the bottles of experience, and see what the quartz tools pull. Mend a worn one at the anvil with smooth quartz."
+    ]
+  },
+  "pvp_preset": 1,
+  "needs": ["quartz-tools-justfatlard"],
+  "preset": {
+    "name": "Quartz Tools",
+    "icon": "quartz-tools-justfatlard:quartz_pickaxe",
+    "pvp": false,
+    "game_mode": "survival",
+    "entry_kit": [
+      {"slot": 0, "item": {"id": "quartz-tools-justfatlard:quartz_pickaxe", "count": 1}},
+      {"slot": 1, "item": {"id": "quartz-tools-justfatlard:quartz_axe", "count": 1}},
+      {"slot": 2, "item": {"id": "quartz-tools-justfatlard:quartz_shovel", "count": 1}},
+      {"slot": 3, "item": {"id": "quartz-tools-justfatlard:quartz_hoe", "count": 1}},
+      {"slot": 4, "item": {"id": "quartz-tools-justfatlard:quartz_sword", "count": 1}},
+      {"slot": 5, "item": {"id": "minecraft:enchanting_table", "count": 1}},
+      {"slot": 6, "item": {"id": "minecraft:bookshelf", "count": 15}},
+      {"slot": 7, "item": {"id": "minecraft:experience_bottle", "count": 64}},
+      {"slot": 8, "item": {"id": "minecraft:lapis_lazuli", "count": 32}},
+      {"slot": 9, "item": {"id": "minecraft:anvil", "count": 1}},
+      {"slot": 10, "item": {"id": "minecraft:smooth_quartz", "count": 8}},
+      {"slot": 11, "item": {"id": "minecraft:experience_bottle", "count": 64}},
+      {"slot": 12, "item": {"id": "minecraft:cooked_beef", "count": 8}}
+    ],
+    "respawn_kit": "entry",
+    "goal": "time",
+    "mobs": "always",
+    "mob_rarity": "rare",
+    "mob_default": "off",
+    "mob_levels": { "minecraft:magma_cube": "normal" },
+    "life": 15,
+    "size": 3,
+    "world": "nether",
+    "shape": "natural",
+    "biome": "minecraft:nether_wastes",
+    "weather": "clear"
+  }
+}
