@@ -3,6 +3,9 @@
     "A full set of tools crafted from smooth quartz blocks. Between iron and diamond, the easiest tools in the game to enchant, but fragile."
   ],
   "versions": {
+    "2.2.4": [
+      "A demo to play in PvP Dimensions' onboarding."
+    ],
     "2.2.3": [
       "Drop changelog notes for changes nothing in the game shows."
     ],
